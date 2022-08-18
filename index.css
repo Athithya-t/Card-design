@@ -1,0 +1,447 @@
+::placeholder {
+  opacity: 0.5;
+  padding: 5px;
+}
+
+#white-circle {
+  width: 5%;
+  height: 10%;
+  margin-left: 20%;
+  margin-top: 8%;
+  border: 2px solid white;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+#white-circle-border {
+  border-radius: 100%;
+  background-color: white;
+  width: 12%;
+  height: 22%;
+  margin-left: 5%;
+  margin-top: 4%;
+  position: absolute;
+}
+
+input {
+  padding: 5px;
+  text-indent: 5px;
+  border: 0.5px solid;
+}
+
+body {
+  width: 100%;
+  margin: 0%;
+  font-family: Space Grotesk, sans-serif;
+  font-size: small;
+  font-weight: 500;
+}
+
+#bg-main {
+  background-image: url(./images/bg-main-mobile.png);
+  width: 100%;
+  height: 27%;
+  margin-left: 0%;
+  position: absolute;
+}
+
+#card-back {
+  height: 70%;
+  margin-left: 20%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+#card-back-cvc {
+  position: absolute;
+  margin-left: 78%;
+  margin-top: 27.5%;
+  color: white;
+}
+
+#card-front {
+  background-image: url(./images/bg-card-front.png);
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  margin-top: 35%;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+#card-number-on-card {
+  color: white;
+  font-size: x-large;
+  margin-left: 6%;
+  margin-top: 13%;
+  position: absolute;
+}
+
+#name-on-card {
+  color: white;
+  margin-left: 6%;
+  position: absolute;
+  margin-top: 27%;
+}
+
+#expiry-date-on-card {
+  color: white;
+  margin-left: 75%;
+  position: absolute;
+  margin-top: 27%;
+}
+
+#card-holder-name {
+  position: absolute;
+  margin-top: 100%;
+  margin-left: 6%;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+}
+
+#cardholder-input {
+  margin-top: 106%;
+  position: absolute;
+  width: 85%;
+  margin-left: 6%;
+  height: 5%;
+  border-radius: 5px;
+}
+
+#card-holder-error {
+  position: absolute;
+  margin-top: 120%;
+  margin-left: 6%;
+  color: red;
+  display: none;
+}
+
+#card-number {
+  position: absolute;
+  margin-top: 129%;
+  margin-left: 6%;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+}
+
+#cardnumber-input {
+  margin-top: 134%;
+  position: absolute;
+  width: 85%;
+  margin-left: 6%;
+  height: 5%;
+  border-radius: 5px;
+}
+
+#card-number-error {
+  position: absolute;
+  margin-top: 148%;
+  margin-left: 6%;
+  display: none;
+  color: red;
+}
+
+#card-number-type-error {
+  position: absolute;
+  margin-top: 148%;
+  margin-left: 6%;
+  display: none;
+  color: red;
+}
+
+#expiry-date {
+  position: absolute;
+  margin-top: 155%;
+  margin-left: 6%;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+}
+
+#month-input {
+  margin-top: 161%;
+  position: absolute;
+  width: 12%;
+  margin-left: 6%;
+  height: 5%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#year-input {
+  margin-top: 161%;
+  position: absolute;
+  width: 12%;
+  margin-left: 23%;
+  height: 5%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#expiry-date-error {
+  position: absolute;
+  margin-top: 175%;
+  margin-left: 6%;
+  color: red;
+  display: none;
+}
+
+#cvc {
+  position: absolute;
+  margin-top: 155%;
+  margin-left: 45%;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+}
+
+#cvc-input {
+  margin-top: 161%;
+  position: absolute;
+  width: 24%;
+  margin-left: 45%;
+  height: 5%;
+  border-radius: 5px;
+}
+
+#cvc-error {
+  position: absolute;
+  margin-top: 175%;
+  margin-left: 45%;
+  color: red;
+  display: none;
+}
+
+#confirm-button {
+  background-color: hsl(278, 68%, 11%);
+  margin-top: 185%;
+  position: absolute;
+  height: 6%;
+  border-radius: 10px;
+  color: white;
+  width: 88%;
+  margin-left: 6%;
+}
+
+#completed-section {
+  display: none;
+}
+
+#tic-symbol {
+  margin-top: 100%;
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  content-align: center;
+}
+
+#thank-you-text {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#completed-message {
+  text-align: center;
+  font-size: large;
+}
+
+#continue-button {
+  background-color: hsl(278, 68%, 11%);
+  height: 6%;
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  width: 88%;
+  margin-left: 6%;
+}
+
+@media screen and (min-width: 440px) {
+  #bg-main {
+    background-image: url(./images/bg-main-desktop.png);
+    width: 30%;
+    height: 100%;
+  }
+
+  #card-back {
+    height: 30%;
+    margin-left: 50%;
+    margin-top: 80%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+  }
+
+  #card-front {
+    background-image: url(./images/bg-card-front.png);
+    height: 30%;
+    width: 27%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 10%;
+    border-radius: 10px;
+  }
+
+  #card-back-cvc {
+    position: absolute;
+    color: white;
+    margin-top: 102%;
+    margin-left: 123%;
+  }
+
+  #card-holder-name {
+    position: absolute;
+    margin-top: 10.8%;
+    margin-left: 50%;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+  }
+
+  #cardholder-input {
+    margin-top: 12%;
+    position: absolute;
+    width: 27%;
+    margin-left: 50%;
+    height: 5%;
+    border-radius: 5px;
+  }
+
+  #card-holder-error {
+    position: absolute;
+    margin-top: 15.3%;
+    margin-left: 50%;
+    color: red;
+    display: none;
+  }
+
+  #card-number {
+    position: absolute;
+    margin-top: 17.8%;
+    margin-left: 50%;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+  }
+
+  #cardnumber-input {
+    margin-top: 19%;
+    position: absolute;
+    width: 27%;
+    margin-left: 50%;
+    height: 5%;
+    border-radius: 5px;
+  }
+
+  #card-number-type-error {
+    position: absolute;
+    margin-top: 22.3%;
+    margin-left: 50%;
+    display: none;
+    color: red;
+  }
+
+  #card-number-error {
+    position: absolute;
+    margin-top: 22.3%;
+    margin-left: 50%;
+    display: none;
+    color: red;
+  }
+
+  #expiry-date {
+    position: absolute;
+    margin-top: 24.5%;
+    margin-left: 50%;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+  }
+
+  #month-input {
+    margin-top: 26%;
+    position: absolute;
+    width: 5%;
+    margin-left: 50%;
+    height: 5%;
+    border-radius: 5px;
+  }
+
+  #year-input {
+    margin-top: 26%;
+    position: absolute;
+    width: 5%;
+    margin-left: 57%;
+    height: 5%;
+    border-radius: 5px;
+  }
+
+  #expiry-date-error {
+    position: absolute;
+    margin-top: 29.4%;
+    margin-left: 50%;
+    color: red;
+    display: none;
+  }
+
+  #cvc {
+    position: absolute;
+    margin-top: 24.5%;
+    margin-left: 65%;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+  }
+
+  #cvc-input {
+    margin-top: 26%;
+    position: absolute;
+    width: 12%;
+    margin-left: 65%;
+    height: 5%;
+    border-radius: 5px;
+  }
+
+  #cvc-error {
+    position: absolute;
+    margin-top: 29.5%;
+    margin-left: 65%;
+    color: red;
+    display: none;
+  }
+
+  #confirm-button {
+    background-color: hsl(278, 68%, 11%);
+    margin-top: 32%;
+    position: absolute;
+    height: 6%;
+    border-radius: 10px;
+    color: white;
+    width: 28%;
+    margin-left: 50%;
+  }
+
+  #tic-symbol {
+    margin-top: 10%;
+    width: 12%;
+    height:12%;
+    margin-left: 55%;
+    content-align: center;
+  }
+
+  #thank-you-text {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left:22%
+  }
+
+  #completed-message {
+    text-align: center;
+    font-size: large;
+    margin-left:24%
+  }
+
+  #continue-button {
+    background-color: hsl(278, 68%, 11%);
+    height: 6%;
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    width:30%;
+    margin-left:47%;
+  }
+}

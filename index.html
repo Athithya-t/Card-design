@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/index.css" rel="stylesheet" />
+    <title>Interactive card details form</title>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <section id="card-front-and-back-section">
+      <div id="bg-main">
+        <img src="./images/bg-card-back.png" id="card-back" />
+        <p id="card-back-cvc">000</p>
+      </div>
+      <div id="card-front">
+        <div id="white-circle-border"></div>
+        <div id="white-circle"></div>
+        <p id="card-number-on-card">0000 0000 0000 0000</p>
+        <p id="name-on-card">JANE APPLESEED</p>
+        <p id="expiry-date-on-card">00/00</p>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <form>
+        <p id="card-holder-name">CARDHOLDER NAME</p>
+        <input placeholder="e.g. Jane Appleseed" id="cardholder-input" />
+        <p id="card-holder-error">Can't be blank</p>
+
+        <p id="card-number">CARD NUMBER</p>
+        <input placeholder="e.g. 1234 5678 9123 0000" id="cardnumber-input" />
+        <p id="card-number-error">Can't be blank</p>
+        <p id="card-number-type-error">Wrong format,numbers only</p>
+
+        <p id="expiry-date">Exp. Date (MM/YY)</p>
+        <input placeholder="MM" id="month-input" />
+        <input placeholder="YY" id="year-input" />
+        <p id="expiry-date-error">Can't be blank</p>
+
+        <p id="cvc">CVC</p>
+        <input placeholder="e.g. 123" id="cvc-input" />
+        <p id="cvc-error">Can't be blank</p>
+
+        <button id="confirm-button" type="button" onclick="SubmitHandler()">
+          Confirm
+        </button>
+      </form>
+    </section>
+    <!-- Completed state start -->
+    <section id="completed-section">
+      <img src="./images/Tic symbol.png" id="tic-symbol" alt="tick symbol" />
+      <p id="thank-you-text">THANK YOU!</p>
+      <p id="completed-message">We've added your card details</p>
+      <button id="continue-button" onclick="Backtoform()">Continue</button>
+    </section>
+  </body>
+</html>
