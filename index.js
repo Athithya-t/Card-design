@@ -46,7 +46,9 @@ function SubmitHandler() {
     document.querySelector("#completed-section").style.display = "block";
     document.querySelector("#name-on-card").textContent = name_on_card;
     document.querySelector("#card-number-on-card").textContent = card_number;
-    document.querySelector("#expiry-date-on-card").textContent = `${expiry_month}/${expiry_year}`;
+    document.querySelector(
+      "#expiry-date-on-card"
+    ).textContent = `${expiry_month}/${expiry_year}`;
     document.querySelector("#card-back-cvc").textContent = cvc;
   }
 }
@@ -59,4 +61,17 @@ function Backtoform() {
   document.getElementById("month-input").value = "";
   document.getElementById("year-input").value = "";
   document.getElementById("cvc-input").value = "";
+  document.querySelector("#cardnumber-input").style.border = "1px solid black";
+  document.querySelector("#card-number-error").style.display = "none";
+  document.querySelector("#cardnumber-input").style.border = "1px solid black";
+  document.querySelector("#card-number-type-error").style.display = "none";
+  document.querySelector("#cardholder-input").style.border = "1px solid black";
+  document.querySelector("#card-holder-error").style.display = "none";
+  document.querySelector("#year-input").style.border = "1px solid black";
+  document.querySelector("#month-input").style.border = "1px solid black";
+  document.querySelector("#expiry-date-error").style.display = "none";
+  document.querySelector("#cvc-input").style.border = "1px solid black";
+  document.querySelector("#cvc-error").style.display = "none";
+  document.querySelector("#cardholder-input").style.border = "1px solid black";
+  document.querySelector("#card-holder-error").style.display = "none";
 }
